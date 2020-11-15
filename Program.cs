@@ -1,4 +1,5 @@
 ﻿using System;
+using System.Threading;
 
 namespace PicturaBuildTools
 {
@@ -6,9 +7,8 @@ namespace PicturaBuildTools
     {
         static void Main(string[] args)
         {
-            Log.
-            Log.ProgressBar progressBar = new Log.ProgressBar();
-            Console.ReadLine();
+            Console.WriteLine("~ Pictura Build Tools [0.1-" + OperatingSystem.Name + "] ~");
+            Console.WriteLine("");
         }
     }
 }
