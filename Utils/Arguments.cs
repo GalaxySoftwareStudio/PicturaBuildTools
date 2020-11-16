@@ -53,11 +53,13 @@ namespace PicturaBuildTools
         public static void PrintOptionDescription(string description, params string[] possibleSwitches)
         {
             Console.ForegroundColor = ConsoleColor.White;
-            Console.CursorLeft = 0;
+            Console.CursorLeft = 4;
+            Console.ForegroundColor = description[0] == '$' ? ConsoleColor.Magenta : ConsoleColor.White;
+            description = description.Replace("$", string.Empty);
             Console.Write(string.Join(" | ", possibleSwitches));
 
             Console.ForegroundColor = ConsoleColor.Gray;
-            Console.CursorLeft = 38;
+            Console.CursorLeft = 42;
             Console.WriteLine(description);
 
             Console.ForegroundColor = ConsoleColor.White;

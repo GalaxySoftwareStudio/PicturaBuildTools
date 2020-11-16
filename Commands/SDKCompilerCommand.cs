@@ -5,16 +5,16 @@ namespace PicturaBuildTools
 {
     public class SDKCompiler
     {
-        public static void Run(Dictionary<string, string> parameters)
+        public static ExitCodes Run(Dictionary<string, string> parameters)
         {
             Log.Trace($"Compiling SDK [{parameters["targetConfig"].ToLower()}] for {parameters["targetPlatform"].ToLower()}...");
-            return;
+            return ExitCodes.Success;
         }
 
         public static void Help()
         {
             Console.ForegroundColor = ConsoleColor.Blue;
-            Console.WriteLine("Build SDK options : ");
+            Console.WriteLine("Build SDK options (build-sdk) : ");
             Console.ForegroundColor = ConsoleColor.White;
             Arguments.PrintOptionDescription("Set where PicturaSDK root directory is", "-s=<path>", "--sdk=<path>");
             Arguments.PrintOptionDescription("Switch the target platform [windows, linux, macos]", "-p=<name>", "--platform=<name>");

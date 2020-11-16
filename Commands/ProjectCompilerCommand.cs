@@ -5,10 +5,10 @@ namespace PicturaBuildTools
 {
     public class ProjectCompiler
     {
-        public static void Run(Dictionary<string, string> parameters)
+        public static ExitCodes Run(Dictionary<string, string> parameters)
         {
             Log.Trace($"Compiling pictura project [{parameters["targetConfig"].ToLower()}] for {parameters["targetPlatform"].ToLower()}...");
-            return;
+            return ExitCodes.Success;
         }
 
         public static void Help()
