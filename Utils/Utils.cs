@@ -29,17 +29,14 @@ namespace PicturaBuildTools
             Console.WriteLine("Usage : PicturaBuildTools [command] [options] [sdkDirectory || projectName.pictura]");
             Console.WriteLine("");
 
-            Console.ForegroundColor = ConsoleColor.DarkMagenta;
-            Console.WriteLine("Commands : ");
             Console.ForegroundColor = ConsoleColor.White;
-            Arguments.PrintOptionDescription("$Prepare the build tools to compile the SDK", "build-sdk");
-            Arguments.PrintOptionDescription("$Prepare the build tools to compile a Pictura project", "build");
-            Arguments.PrintOptionDescription("$Remove all project binaries and temporary files", "clean");
+            Console.WriteLine("Commands : ");
+            Arguments.PrintOptionDescription("Prepare the build tools to compile the SDK", "build-sdk");
+            Arguments.PrintOptionDescription("Prepare the build tools to compile a Pictura project", "build");
+            Arguments.PrintOptionDescription("Remove all project binaries and temporary files", "clean");
             Console.WriteLine("");
 
-            Console.ForegroundColor = ConsoleColor.DarkMagenta;
             Console.WriteLine("General options : ");
-            Console.ForegroundColor = ConsoleColor.White;
             Arguments.PrintOptionDescription("Print this help message", "-h", "--help");
             Console.CursorLeft = 44;
             Console.WriteLine("(Can be passed to any command) [e.g PicturaBuildTools build-sdk --help].\n");

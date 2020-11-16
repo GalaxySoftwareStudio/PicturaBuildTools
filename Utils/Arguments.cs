@@ -1,5 +1,4 @@
 using System;
-using System.Linq;
 
 namespace PicturaBuildTools
 {
@@ -54,7 +53,7 @@ namespace PicturaBuildTools
         {
             Console.ForegroundColor = ConsoleColor.White;
             Console.CursorLeft = 4;
-            Console.ForegroundColor = description[0] == '$' ? ConsoleColor.Magenta : ConsoleColor.White;
+            Console.ForegroundColor = description[0] == '$' ? ConsoleColor.Blue : ConsoleColor.Magenta;
             description = description.Replace("$", string.Empty);
             Console.Write(string.Join(" | ", possibleSwitches));
 

@@ -13,13 +13,12 @@ namespace PicturaBuildTools
 
         public static void Help()
         {
-            Console.ForegroundColor = ConsoleColor.Blue;
-            Console.WriteLine("Build SDK options (build-sdk) : ");
             Console.ForegroundColor = ConsoleColor.White;
-            Arguments.PrintOptionDescription("Set where PicturaSDK root directory is", "-s=<path>", "--sdk=<path>");
-            Arguments.PrintOptionDescription("Switch the target platform [windows, linux, macos]", "-p=<name>", "--platform=<name>");
-            Arguments.PrintOptionDescription("Switch the target configuration [development, release]", "-c=<name>", "--configuration=<name>");
-            Arguments.PrintOptionDescription("Don't save PicturaSDK as an environment variable if the compilation succeed", "-np", "--no-env-var");
+            Console.WriteLine("Build SDK options (build-sdk) : ");
+            Arguments.PrintOptionDescription("$Set where PicturaSDK root directory is", "-s=<path>", "--sdk=<path>");
+            Arguments.PrintOptionDescription("$Switch the target platform [windows, linux, macos]", "-p=<name>", "--platform=<name>");
+            Arguments.PrintOptionDescription("$Switch the target configuration [development, release]", "-c=<name>", "--configuration=<name>");
+            Arguments.PrintOptionDescription("$Don't save PicturaSDK as an environment variable if the compilation succeed", "-np", "--no-env-var");
         }
     }
 }

@@ -13,12 +13,11 @@ namespace PicturaBuildTools
 
         public static void Help()
         {
-            Console.ForegroundColor = ConsoleColor.Blue;
-            Console.WriteLine("Build project options : ");
             Console.ForegroundColor = ConsoleColor.White;
-            Arguments.PrintOptionDescription("Indicate which SDK to use (Default path is PICTURA_SDK environment path)", "-s=<path>", "--sdk=<path>");
-            Arguments.PrintOptionDescription("Switch the target platform [windows, linux, macos]", "-p=<name>", "--platform=<name>");
-            Arguments.PrintOptionDescription("Switch the target configuration [development, release]", "-c=<name>", "--configuration=<name>");
+            Console.WriteLine("Build project options : ");
+            Arguments.PrintOptionDescription("$Indicate which SDK to use (Default path is PICTURA_SDK environment path)", "-s=<path>", "--sdk=<path>");
+            Arguments.PrintOptionDescription("$Switch the target platform [windows, linux, macos]", "-p=<name>", "--platform=<name>");
+            Arguments.PrintOptionDescription("$Switch the target configuration [development, release]", "-c=<name>", "--configuration=<name>");
         }
     }
 }
